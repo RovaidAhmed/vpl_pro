@@ -190,7 +190,7 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BackgroundImage = global::Inventory_Management_System.Properties.Resources.cashier;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(370, 358);
+            this.ClientSize = new System.Drawing.Size(374, 358);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtusrpswrd);

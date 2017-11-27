@@ -13,22 +13,18 @@ namespace Inventory_Management_System
 {
     public partial class DeleteUser : Form 
     {
-        MethodClass MethodClassObj = new MethodClass();
         public DeleteUser()
         {
             InitializeComponent();
-            MethodClassObj.ConnectionMethod();
         }
-       // SqlConnection sc = new SqlConnection("Data Source=IBADAHMED;user id=sa;password=ghufran;database=Inventory Management System");
+        //  SqlConnection sc = new SqlConnection("Data Source=ASGHAR;user id=sa;password=125;database=Inventory Management System");
+
+        SqlConnection sc = new SqlConnection("Data source=DESKTOP-KKE19MU\\SQLEXPRESS;integrated security=true;database=Inventory management System");
 
 
-
-
-        public void updategrid()
+        public void gridfill()
         {
-            SqlCommand cmd = new SqlCommand("select_user", MethodClassObj.sc);
-            cmd.CommandType = CommandType.StoredProcedure;
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            SqlDataAdapter sda = new SqlDataAdapter("select * from Vendor", sc);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -43,13 +39,13 @@ namespace Inventory_Management_System
 
                 {
 
-                    SqlCommand cmd = new SqlCommand("delete_user", MethodClassObj.sc);
+                    SqlCommand cmd = new SqlCommand("delete_user", sc);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@id", dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                    MethodClassObj.sc.Open();
+                    sc.Open();
                     cmd.ExecuteNonQuery();
-                    MethodClassObj.sc.Close();
-                    updategrid();
+                    sc.Close();
+                    gridfill();
                     MessageBox.Show("Successfully Delete");
                    
                 }
@@ -73,14 +69,13 @@ namespace Inventory_Management_System
         private void DeleteUser_Load(object sender, EventArgs e)
         {
 
-            updategrid();
+            gridfill();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            Mainfrom mainformObj = new Mainfrom();
-            mainformObj.Show();
+            this.Hide();
+            manfrmshow.showfrm();
         }
     }
 }

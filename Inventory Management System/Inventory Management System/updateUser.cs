@@ -15,17 +15,16 @@ namespace Inventory_Management_System
 {
     public partial class updateUser : Form
     {
-        MethodClass MethodClassObj = new MethodClass();
-
         public updateUser()
         {
             InitializeComponent();
-            MethodClassObj.ConnectionMethod();
         }
-        //SqlConnection sc = new SqlConnection("Data Source=IBADAHMED;user id=sa;password=ghufran;database=Inventory Management System");
+        //   SqlConnection sc = new SqlConnection("Data source=ASGHAR;user id=sa;password=125;database=Inventory Management System");
+
+        SqlConnection sc = new SqlConnection("Data source=DESKTOP-KKE19MU\\SQLEXPRESS;integrated security=true;database=Inventory management System");
         public void updategrid()
         {
-            SqlCommand cmd = new SqlCommand("select_user", MethodClassObj.sc);
+            SqlCommand cmd = new SqlCommand("select_user", sc);
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -44,7 +43,7 @@ namespace Inventory_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("update_user", MethodClassObj.sc);
+            SqlCommand cmd = new SqlCommand("update_user", sc);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@id", txtid.Text);
             cmd.Parameters.AddWithValue("@name", txtusrname.Text);
@@ -52,9 +51,9 @@ namespace Inventory_Management_System
             cmd.Parameters.AddWithValue("@contctno", txtusrcntct.Text);
             cmd.Parameters.AddWithValue("@addres", txtusraddrs.Text);
         //    cmd.Parameters.AddWithValue("@password", encryptpassword(txtusrpswrd.Text));
-            MethodClassObj.sc.Open();
+            sc.Open();
             cmd.ExecuteNonQuery();
-            MethodClassObj.sc.Close();
+            sc.Close();
             MessageBox.Show("Successfully Updated");
             updategrid();
             txtid.Text = txtusrname.Text = txtusreml.Text = txtusrcntct.Text = txtusraddrs.Text = null;
@@ -81,8 +80,7 @@ namespace Inventory_Management_System
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            Mainfrom mfrm = new Mainfrom();
-            mfrm.Show();
+            manfrmshow.showfrm();
         }
     }
 }

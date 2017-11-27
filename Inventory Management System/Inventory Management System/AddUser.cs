@@ -18,8 +18,8 @@ namespace Inventory_Management_System
         {
             InitializeComponent();
         }
-        SqlConnection sc = new SqlConnection("Data source=IbadAhmed; user id=sa;password=ghufran;database=Inventory Management System");
-
+        //  SqlConnection sc = new SqlConnection("Data source=ASGHAR; user id=sa;password=125;database=Inventory Management System");
+        SqlConnection sc = new SqlConnection("Data source=DESKTOP-KKE19MU\\SQLEXPRESS;integrated security=true;database=Inventory management System");
         static string encryptpassword(string value)
         {
             using (MD5CryptoServiceProvider mcsp = new MD5CryptoServiceProvider())

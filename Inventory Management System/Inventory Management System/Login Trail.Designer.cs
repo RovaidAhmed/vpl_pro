@@ -40,7 +40,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 38);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 52);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(660, 313);
@@ -54,7 +54,7 @@
             this.dltbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dltbtn.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dltbtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.dltbtn.Location = new System.Drawing.Point(2, 349);
+            this.dltbtn.Location = new System.Drawing.Point(2, 371);
             this.dltbtn.Name = "dltbtn";
             this.dltbtn.Size = new System.Drawing.Size(175, 48);
             this.dltbtn.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(537, 349);
+            this.button2.Location = new System.Drawing.Point(537, 371);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 48);
             this.button2.TabIndex = 2;
@@ -83,10 +83,10 @@
             this.btnBack.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.Location = new System.Drawing.Point(2, 1);
+            this.btnBack.Location = new System.Drawing.Point(1, 0);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(31, 26);
-            this.btnBack.TabIndex = 31;
+            this.btnBack.TabIndex = 29;
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -96,7 +96,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Inventory_Management_System.Properties.Resources.logintrail;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(664, 405);
+            this.ClientSize = new System.Drawing.Size(664, 424);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dltbtn);

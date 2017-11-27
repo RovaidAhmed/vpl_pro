@@ -13,15 +13,14 @@ namespace Inventory_Management_System
 {
     public partial class Loginfrm : Form
     {
-        MethodClass MethodClassObj = new MethodClass();
         public Loginfrm()
         {
             InitializeComponent();
-            MethodClassObj.ConnectionMethod();
         }
 
-     //   SqlConnection sc = new SqlConnection("Data Source=IBADAHMED;user id=sa;password=ghufran;database=Inventory Management System");
+        //        SqlConnection sc = new SqlConnection("Data source=ASGHAR;user id=sa;password=125;database=Inventory Management System");
 
+        SqlConnection sc = new SqlConnection("Data source=DESKTOP-KKE19MU\\SQLEXPRESS;integrated security=true;database=Inventory management System");
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -51,30 +50,30 @@ namespace Inventory_Management_System
             
         }
         
-        public void insrt_trail()
+        public   void insrt_trail()
         {
-            SqlCommand cmd = new SqlCommand("insert_trail", MethodClassObj.sc);
+            SqlCommand cmd = new SqlCommand("insert_trail",sc);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@username", txtUsername.Text);
             cmd.Parameters.AddWithValue("@Description",txtUsername.Text + " has successfully Login !");
             cmd.Parameters.AddWithValue("@time", label7.Text);
             cmd.Parameters.AddWithValue("@date", label8.Text);
-            MethodClassObj.sc.Open();
+            sc.Open();
             cmd.ExecuteNonQuery();
-            MethodClassObj.sc.Close();
+            sc.Close();
         }
         private void btnlogin_Click(object sender, EventArgs e)
         {
             if (txtpassword.Text != "" && txtUsername.Text != "")
             {
-                SqlCommand cmd = new SqlCommand("select * from Admin where AdminName='" + txtUsername.Text + "'and AdminPassword='" + txtpassword.Text + "'", MethodClassObj.sc);
-                MethodClassObj.sc.Open();
+                SqlCommand cmd = new SqlCommand("select * from Admin where AdminName='" + txtUsername.Text + "'and AdminPassword='" + txtpassword.Text + "'", sc);
+                sc.Open();
                 cmd.ExecuteNonQuery();
                 SqlDataReader dr = cmd.ExecuteReader();
                 dr.Read();
                 if (dr.HasRows)
                 {
-                    MethodClassObj.sc.Close();
+                    sc.Close();
                     MessageBox.Show("Well Come");
                     insrt_trail();
                     txtpassword.Text = txtUsername.Text = null;
@@ -92,7 +91,7 @@ namespace Inventory_Management_System
                     txtpassword.Text = txtUsername.Text = null;
                     label3.Visible = true;
                     label4.Visible = true;
-                    MethodClassObj.sc.Close();
+                    sc.Close();
                 }
             }
             else
@@ -103,7 +102,7 @@ namespace Inventory_Management_System
                     label3.Visible = true;
                     label4.Visible = true;
                 }
-                MethodClassObj.sc.Close();
+                sc.Close();
               
             }
         }

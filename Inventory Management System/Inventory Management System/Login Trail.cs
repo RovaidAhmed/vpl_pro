@@ -14,16 +14,14 @@ namespace Inventory_Management_System
 {
     public partial class Login_Trail : Form
     {
-        MethodClass MethodClassObj = new MethodClass();
         public Login_Trail()
         {
             InitializeComponent();
-            MethodClassObj.ConnectionMethod();
         }
-        //SqlConnection sc = new SqlConnection("Data Source=IBADAHMED;user id=sa;password=ghufran;database=Inventory Management System");
+        SqlConnection sc = new SqlConnection("Data source=DESKTOP-KKE19MU\\SQLEXPRESS;integrated security=true;database=Inventory management System");
         public void updategrid()
         {
-            SqlDataAdapter sda = new SqlDataAdapter("select * from Trail", MethodClassObj.sc);
+            SqlDataAdapter sda = new SqlDataAdapter("select * from Trail", sc);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -38,11 +36,11 @@ namespace Inventory_Management_System
 
         private void dltbtn_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("delete  from Trail", MethodClassObj.sc);
-
-            MethodClassObj.sc.Open();
+            SqlCommand cmd = new SqlCommand("delete  from Trail", sc);
+      
+            sc.Open();
             cmd.ExecuteNonQuery();
-            MethodClassObj.sc.Close();
+            sc.Close();
             MessageBox.Show("Successfully delete");
             updategrid();
 
@@ -55,16 +53,15 @@ namespace Inventory_Management_System
             mainfrm.Show();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            Mainfrom mainformObj = new Mainfrom();
-            mainformObj.Show();
+            manfrmshow.showfrm();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

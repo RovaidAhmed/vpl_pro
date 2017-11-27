@@ -1,0 +1,41 @@
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.exe.config
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.exe
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.pdb
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.csprojResolveAssemblyReference.cache
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Form1.resources
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Properties.Resources.resources
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.csproj.GenerateResource.Cache
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.exe
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.pdb
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Loginfrm.resources
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.AddUser.resources
+c:\users\muhammad asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Mainfrom.resources
+C:\Users\Muhammad Asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Login_Trail.resources
+C:\Users\Muhammad Asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.updateUser.resources
+C:\Users\Muhammad Asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.DeleteUser.resources
+C:\Users\Muhammad Asghar khan\documents\visual studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Product.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.exe.config
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.exe
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.pdb
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.exe
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.pdb
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\mscorlib.dll
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\System.Net.Http.dll
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\System.Net.Http.xml
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\normidna.nlp
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\normnfc.nlp
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\normnfd.nlp
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\normnfkc.nlp
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\bin\Debug\normnfkd.nlp
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.csprojResolveAssemblyReference.cache
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.AddUser.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.DeleteUser.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Form1.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Login_Trail.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Loginfrm.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Mainfrom.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Properties.Resources.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.updateUser.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.csproj.GenerateResource.Cache
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.AddProduct.resources
+C:\Users\ibad ahmed\Desktop\VPL inventory Management\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.CreatePartyAccount.resources
